@@ -12,6 +12,11 @@ function App() {
       </h1>
 
       <ResourceList />
+      <h4 className="ui centered header">
+        Developed By
+        <div className="sub header">Hemanshu Mahajan - Pune</div>
+        <div className="sub header">API provider - covid19.mathdro.id</div>
+      </h4>
     </div>
   );
 }
