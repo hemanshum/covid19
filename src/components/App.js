@@ -1,5 +1,6 @@
 import React from "react";
 import ResourceList from "./ResourceList";
+import Summary from "./Summary";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
           Updates on Corona Virus Status in every Country
         </div>
       </h1>
-
+      <Summary />
       <ResourceList />
       <h4 className="ui centered header">
         Developed By
