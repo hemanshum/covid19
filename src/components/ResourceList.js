@@ -19,7 +19,7 @@ const ResourceList = () => {
     <div className="ui four stackable cards">
       {resourses.length === 0 ? (
         <div className="ui active centered inline inverted dimmer">
-          <div className="ui large text  loader">
+          <div className="ui massive  text  loader">
             Fetching COVID19 information, please wait...
           </div>
         </div>
