@@ -7,7 +7,7 @@ function App() {
       <h1 className="ui centered header">
         COVID19 INFO
         <div className="sub header">
-          Live updates on Corona Virus Status in every Country
+          Updates on Corona Virus Status in every Country
         </div>
       </h1>
 
