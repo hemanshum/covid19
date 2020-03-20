@@ -11,8 +11,11 @@ function App() {
           Updates on Corona Virus Status in every Country
         </div>
       </h1>
+      <div class="ui divider"></div>
       <Summary />
+      <div class="ui divider"></div>
       <ResourceList />
+      <div class="ui divider"></div>
       <h4 className="ui centered header">
         Developed By
         <div className="sub header">Hemanshu Mahajan - Pune</div>
