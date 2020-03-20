@@ -40,7 +40,13 @@ const Summary = () => {
           </div>
         </div>
         <div className="content">
-          <h1 className="ui center aligned huge header">{confirmedSummary}</h1>
+          <h1 className="ui center aligned huge header">
+            {resourses.length === 0 ? (
+              <div className="ui active centered inline loader"></div>
+            ) : (
+              confirmedSummary
+            )}
+          </h1>
         </div>
       </div>
 
@@ -51,7 +57,13 @@ const Summary = () => {
           </div>
         </div>
         <div className="content">
-          <h2 className="ui center aligned huge header">{recoveredSummary}</h2>
+          <h2 className="ui center aligned huge header">
+            {resourses.length === 0 ? (
+              <div className="ui active centered inline loader"></div>
+            ) : (
+              recoveredSummary
+            )}
+          </h2>
         </div>
       </div>
 
@@ -62,7 +74,13 @@ const Summary = () => {
           </div>
         </div>
         <div className="content">
-          <h2 className="ui center aligned huge header">{activeSummary}</h2>
+          <h2 className="ui center aligned huge header">
+            {resourses.length === 0 ? (
+              <div className="ui active centered inline loader"></div>
+            ) : (
+              activeSummary
+            )}
+          </h2>
         </div>
       </div>
 
@@ -73,7 +91,13 @@ const Summary = () => {
           </div>
         </div>
         <div className="content">
-          <h2 className="ui center aligned huge header">{deathSummary}</h2>
+          <h2 className="ui center aligned huge header">
+            {resourses.length === 0 ? (
+              <div className="ui active centered inline loader"></div>
+            ) : (
+              deathSummary
+            )}
+          </h2>
         </div>
       </div>
     </div>
