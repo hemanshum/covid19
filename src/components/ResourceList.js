@@ -17,32 +17,43 @@ const ResourceList = () => {
     fetchResource();
   }, []);
   return (
-    <div className="ui three stackable cards">
+    <div className="ui four stackable cards">
       {resourses.map((record, index) => (
         <div className="ui card" key={index}>
-          <div className="content">
-            <div className="center aligned">CONFIRMED CASES</div>
-            <div className="center aligned orange header">
-              {record.confirmed}
-            </div>
-            <div className="center aligned description">
-              <p>
-                {`Total recovered ${record.recovered}, Total deaths ${record.deaths}`}
-                , these counts are last updated on{" "}
-                {moment(record.lastUpdate).format("MMM Do YYYY")}
-              </p>
-            </div>
-          </div>
           <div className="extra content">
-            <div className="center aligned author">
+            <h1 className="center aligned header">
               <img
                 className="ui avatar image"
                 src={`https://www.countryflags.io/${record.iso2}/flat/64.png`}
+                alt=""
               />
               {record.provinceState !== null
                 ? record.provinceState + " - "
                 : null}{" "}
               {record.countryRegion}
+            </h1>
+            <div className="center aligned">
+              <h4 className="ui grey sub header">
+                {moment(record.lastUpdate).calendar()}
+              </h4>
+            </div>
+          </div>
+          <div className="content">
+            <div className="ui center aligned sub header">Total Confirmed </div>
+            <div className="center aligned">
+              <h1 className="ui orange header">{record.confirmed}</h1>
+            </div>
+            <div className="ui center aligned sub header">Total Recovered</div>
+            <div className="center aligned">
+              <h3 className="ui green header">{record.recovered}</h3>
+            </div>
+            <div className="ui center aligned sub header">Total Active</div>
+            <div className="center aligned">
+              <h3 className="ui yellow header">{record.active}</h3>
+            </div>
+            <div className="ui center aligned sub header">Total Deaths</div>
+            <div className="center aligned">
+              <h3 className="ui red header"> {record.deaths}</h3>
             </div>
           </div>
         </div>
