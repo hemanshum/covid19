@@ -1,11 +1,15 @@
 import React from "react";
 import ResourceList from "./ResourceList";
 import Summary from "./Summary";
+import coronaImg from "../img/corona.png";
 
 function App() {
   return (
     <div className="ui container spacer-vertical">
       <h1 className="ui centered header">
+        <h2 className="ui centered header">
+          <img src={coronaImg} width="70" height="70" alt="img" />
+        </h2>
         COVID19 INFO
         <div className="sub header">
           Updates on Corona Virus Status in every Country
