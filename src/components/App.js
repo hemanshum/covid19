@@ -22,7 +22,10 @@ function App() {
       <div className="ui divider"></div>
       <h4 className="ui centered header">
         Developed By
-        <div className="sub header">Hemanshu Mahajan - Pune</div>
+        <div className="sub header">
+          Hemanshu Mahajan - Pune, Maharashtra. India
+        </div>
+        <div className="sub header">Email - hemanshu.mahajan175@gmail.com</div>
         <div className="sub header">API provider - covid19.mathdro.id</div>
       </h4>
     </div>
