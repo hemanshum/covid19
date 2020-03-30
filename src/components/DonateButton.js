@@ -7,7 +7,7 @@ const DonateButton = () => {
 				href="https://www.pmindia.gov.in"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="ui animated fade orange button big"
+				className="ui animated fade orange button big spacer-sm"
 			>
 				<div className="visible content">
 					<span role="img" aria-labelledby="jsx-a11y/accessible-emoji">
@@ -26,7 +26,7 @@ const DonateButton = () => {
 				href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
 				target="_blank"
 				rel="noopener noreferrer"
-				className="ui animated fade orange basic button big"
+				className="ui animated fade orange basic button big spacer-sm"
 			>
 				<div className="visible content">
 					<span role="img" aria-labelledby="jsx-a11y/accessible-emoji">
